@@ -3,9 +3,9 @@ import EditForm from "./EditForm";
 import { Suspense } from "react";
 
 type Props = {
-	params: {
+	params: Promise<{
 		id: number;
-	};
+	}>;
 };
 
 async function getPost(id: number) {
